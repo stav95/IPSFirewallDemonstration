@@ -1,0 +1,12 @@
+source_address,source_port,destination_ip,destination_port,protocol,action
+111.234.233.222,867,65.234.184.96,8080,any,allow
+165.37.174.96,123,1.111.111.222,3456,udp,drop
+1.111.111.222,2354,65.234.184.96,123,any,allow
+any,3456,165.234.185.96,80,ftp,allow
+165.234.185.96,any,111.234.233.222,80,rpc,drop
+any,123,any,3456,any,allow
+1.111.111.222,123,any,any,any,drop
+111.234.233.222,8080,any,2354,ssh,drop
+any,80,111.234.233.222,867,udp,drop
+65.234.184.96,8080,165.37.174.96,867,ftp,allow
+any,any,any,any,any,block
